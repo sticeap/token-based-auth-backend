@@ -6,7 +6,7 @@ var jwt        = require("jsonwebtoken");
 var mongoose   = require("mongoose");
 var app        = express();
 
-var port = process.env.PORT || 3001;
+var port = process.env.PORT || 80;
 var User     = require('./models/User');
 
 // Connect to DB
