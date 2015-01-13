@@ -10,7 +10,7 @@ var port = process.env.PORT || 8080;
 var User     = require('./models/User');
 
 // Connect to DB
-mongoose.connect(process.env.MONGO_URL);
+mongoose.connect('localhost:27017');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
